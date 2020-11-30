@@ -400,7 +400,7 @@ Module GenLow : GenLowInterface.Sig.
     inv H. eexists (run g s r1). split.
     eapply H1. eexists; split; [| eexists; reflexivity ].
     now constructor.
-    edestruct H2.
+    edestruct (H2).
     * eexists. split; [| eexists; eauto ]. now constructor.
     * inv H0. inv H3. inv H5. eassumption.
     * inv H0.
